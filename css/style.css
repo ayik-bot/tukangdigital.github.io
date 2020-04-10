@@ -1,16 +1,18 @@
+.slider h2,
 .slider h3,
-.slider h5,
-.clients h3 {
+.slider h4,
+.clients h3 .parallax h1 {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .parallax-container {
-  height: 30%;
+  min-height: 450px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, 0.9);
 }
-
-.parallax img {
-  filter: grayscale(1);
-  opacity: 0.7 !important;
+.parallax-container .section {
+  width: 100%;
 }
 
 .clients img {
@@ -21,4 +23,37 @@
 section,
 footer {
   padding: 20px 0px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+p {
+  line-height: 2rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 0%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #size .section {
+    font-weight: bolder;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
 }
